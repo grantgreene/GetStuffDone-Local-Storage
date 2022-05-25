@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GetStuffDone | The Productivity App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="site-logo"><img src="img/gsdlogo.svg" alt="GSD Logo" /></a>
+        <div class="task-counter">Current Tasks:<span>0</span></div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="new-task-filter-task-pane">
+          <div class="new-task-pane">
+            <h1>Add New Task</h1>
+            <form>
+              <div>
+                <input type="hidden" name="id-input" id="id-input" />
+              </div>
+              <div>
+                <label for="title-input">What is your new task?</label>
+                <input type="text" name="title-input" id="title-input" placeholder="Task Title..." />
+              </div>
+              <div>
+                <label for="notes-input">Any notes for this task?</label>
+                <textarea name="notes-input" id="notes-input" placeholder="Notes..."></textarea>
+              </div>
+              <div>
+                <label for="due-input">When is it due?</label>
+                <input type="date" name="due-input" id="due-input" />
+              </div>
+              <input type="submit" class="add-btn" value="Add Task" />
+            </form>
+          </div>
+          <div class="filter-task-pane">
+            <h1>Filter Tasks</h1>
+            <form>
+              <div>
+                <label for="filter-input">Filter Task Title</label>
+                <input type="text" name="filter-input" id="filter-input" placeholder="Filter for..." />
+              </div>
+              <div>
+                <label for="sort-input">Sort Tasks</label>
+                <select name="sort-input" id="sort-input">
+                  <option selected disabled>Sort by:</option>
+                  <option value="sort-title">Task Title</option>
+                  <option value="sort-due">Due Date</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="task-list-pane">
+          <h1>Tasks:</h1>
+          <div class="no-tasks">You have no tasks ¯\_(ツ)_/¯</div>
+          <ul class="task-list"></ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>GetStuffDone was created by Grant Greene</div>
+      <div>
+        <a href="http://www.github.com/grantgreene" target="_blank"><img src="img/gglogo.svg" alt="" /></a>
+      </div>
+      <a href="http://www.github.com/grantgreene" target="_blank" class="github">Grant Greene on Github</a>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
