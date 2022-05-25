@@ -32,6 +32,6 @@ GetStuffDone is a advanced task tracker that you allows you to track upcoming to
 
 ## Working Demo:
 
-[GetStuffDone](http://www.google.com)
+[GetStuffDone](https://grantgreene.github.io/GetStuffDone-Local-Storage/)
 
 ** IF USING PRIVATE/INCOGNITO BROWSING, LOCAL STORAGE WILL NOT SAVE TASKS NEXT BROWSER RELOAD **
